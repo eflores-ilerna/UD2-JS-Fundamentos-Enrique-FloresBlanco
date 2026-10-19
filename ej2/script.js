@@ -13,7 +13,9 @@ alert(city);
 alert(COLOR_FAVORITO);
 alert(loadTime);
 
-COLOR_FAVORITO = "AA"
+//COLOR_FAVORITO = "AA"
+// Uncaught TypeError: Assignment to constant variable.
+// Reasignación de una constante
 
 
 
