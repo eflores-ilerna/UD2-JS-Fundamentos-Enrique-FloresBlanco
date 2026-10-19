@@ -7,4 +7,14 @@ const COLOR_FAVORITO = 0xFF0000;
 
 let loadTime = Date.now();
 
+alert(userName);
+alert(age);
+alert(city);
+alert(COLOR_FAVORITO);
+alert(loadTime);
+
+COLOR_FAVORITO = "AA"
+
+
+
 
