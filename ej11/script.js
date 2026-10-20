@@ -17,9 +17,35 @@ let cancionUltima = playlist.pop();
 
 playlist[0].push(1975);
 
-document.write(`Ultima Cancion: ${cancionUltima[0]} <br>`);
+document.write(`Ultima Cancion: ${cancionUltima[0]} `);
 
-document.write("<h2>Playlist restante</h2><br><ol>")
+document.write("<h3>Playlist restante</h3><ol>")
 playlist.forEach(cancion => {
     document.write(`<li>${cancion[0]}, ${cancion[1]}, Duración:${cancion[2]/60}min, género: ${cancion[3]}`)
 });
+
+
+document.write("</ol><h2>Parte 2</h2>")
+playlist.splice(1,0,["We Will Rock You","Queen",230,"Rock"])
+
+
+let eliminada = playlist.splice(2,1)[0];
+
+
+
+playlist.splice(0,1,eliminada);
+
+
+document.write("<h3>Cancion eliminada</h3>")
+document.write(`<li>${eliminada[0]}, ${eliminada[1]}, Duración:${eliminada[2]/60}min, género: ${eliminada[3]}`)
+
+
+
+document.write("<h3>Playlist restante</h3><ol>")
+playlist.forEach(cancion => {
+    document.write(`<li>${cancion[0]}, ${cancion[1]}, Duración:${cancion[2]/60}min, género: ${cancion[3]}`)
+});
+
+
+
+
