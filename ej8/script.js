@@ -10,10 +10,14 @@ if(nota < 0 || nota > 10){
 }
 else if(nota < 7){
     document.write("Aprobado");
+}else{
+    document.write(nota<9?"Notable":"Sobresaliente")
 }
+
+/*
 else if(nota < 9){
     document.write("Notable");
 }
 else{
     document.write("Sobresaliente")
-}
+}*/
