@@ -8,9 +8,9 @@ let undeefined = undefined;
 let symbol = Symbol("aaa");
 
 
-Document.write(typeof(number));
-Document.write(typeof(bigint));
-Document.write(typeof(string));
-Document.write(typeof(nuull));
-Document.write(typeof(undeefined));
-Document.write(typeof(symbol));
+document.write(typeof(number)+"<br>");
+document.write(typeof(bigint)+"<br>");
+document.write(typeof(string)+"<br>");
+document.write(typeof(nuull)+"<br>");
+document.write(typeof(undeefined)+"<br>");
+document.write(typeof(symbol)+"<br>");
