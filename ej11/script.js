@@ -46,6 +46,41 @@ playlist.forEach(cancion => {
     document.write(`<li>${cancion[0]}, ${cancion[1]}, Duración:${cancion[2]/60}min, género: ${cancion[3]}`)
 });
 
+document.write("</ol><h2>Parte 3</h2>")
+
+let copiaPlaylist = [...playlist];
+
+copiaPlaylist[0][0] = "Nuevo Titulo"
+
+document.write("<h3>Playlist original</h3><ol>")
+playlist.forEach(cancion => {
+    document.write(`<li>${cancion[0]}, ${cancion[1]}, Duración:${cancion[2]/60}min, género: ${cancion[3]}`)
+});
+
+
+document.write("</ol><h3>Playlist copia</h3><ol>")
+copiaPlaylist.forEach(cancion => {
+    document.write(`<li>${cancion[0]}, ${cancion[1]}, Duración:${cancion[2]/60}min, género: ${cancion[3]}`)
+});
+
+//La playlist original se ha modificado, ya que crea una array con referencias a los mismos objetos
+
+let copiaIndependiente = structuredClone(playlist); //map no puede realizar copias profundas sin recursión
+
+copiaIndependiente[0][0] = "Título aún mas nuevo"
+
+document.write("</ol><h3>Playlist original</h3><ol>")
+playlist.forEach(cancion => {
+    document.write(`<li>${cancion[0]}, ${cancion[1]}, Duración:${cancion[2]/60}min, género: ${cancion[3]}`)
+});
+
+
+document.write("</ol><h3>Playlist Independiente</h3><ol>")
+copiaIndependiente.forEach(cancion => {
+    document.write(`<li>${cancion[0]}, ${cancion[1]}, Duración:${cancion[2]/60}min, género: ${cancion[3]}`)
+});
+
+
 
 
 
