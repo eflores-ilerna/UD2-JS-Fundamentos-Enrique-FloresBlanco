@@ -31,3 +31,4 @@ document.write(`|| 0: ${0 ||"null value"}<br>`)
 ?? solo lo devuelve si es nulo o undefined
 */
 
+document.write( `!!0 === false: ${!!0 === false}`)
