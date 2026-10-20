@@ -28,15 +28,22 @@ switch(prompt("1 – Mostrar la tabla de multiplicar de un número (con for).\n"
             }
         }
         break;
-    case "3":
+    case "3":{
         let out = ""
         for(let i = 1;i<=20;i++){
             if(i%2==0){continue;}
             out = out + `${i}\n`
         }
-        alert(out);
+        alert(out);}
         break;
     case "4":
+        {let out = ""
+        let numero = Number(prompt("Numero"))
+        do{
+            out = out + `${numero--}\n`
+        }
+        while(numero>=0)
+        alert(out);}
         break;
     case "0":
     default:
