@@ -28,6 +28,10 @@ switch(prompt("1 – Mostrar la tabla de multiplicar de un número (con for).\n"
             }
         }
         break;
+    case "3":
+        break;
+    case "4":
+        break;
     case "0":
     default:
         salir = true;
