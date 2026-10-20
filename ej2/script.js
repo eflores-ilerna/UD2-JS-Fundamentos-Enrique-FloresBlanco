@@ -1,4 +1,4 @@
-"use script";
+"use strict";
 
 let userName = "eflobla";
 let age = 23;
