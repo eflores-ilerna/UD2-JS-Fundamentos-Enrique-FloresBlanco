@@ -1,5 +1,7 @@
 "use strict";
 
+let salir = false;
+while(!salir){
 switch(prompt("1 – Mostrar la tabla de multiplicar de un número (con for).\n"+
 "2 – Sumar números introducidos por el usuario hasta que introduzca uno vacío o cancele (con while(true) y break).\n"+
 "3 – Mostrar solo los números impares del 1 al 20 (con for y continue).\n"+
@@ -25,4 +27,10 @@ switch(prompt("1 – Mostrar la tabla de multiplicar de un número (con for).\n"
                 suma += Number(b);
             }
         }
-}
+        break;
+    case "0":
+    default:
+        salir = true;
+        alert("Saliendo");
+        document.write("Programa finalizado");
+}}
