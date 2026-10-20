@@ -14,4 +14,15 @@ switch(prompt("1 – Mostrar la tabla de multiplicar de un número (con for).\n"
         }
 
         alert(tabla)
+        break;
+    case "2":
+        let suma = 0
+        while(true){
+            let b = prompt(`suma = ${suma}\n`)
+            if(b == ""){
+                break;
+            }else{
+                suma += Number(b);
+            }
+        }
 }
